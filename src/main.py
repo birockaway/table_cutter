@@ -71,7 +71,6 @@ def delete_table_rows(token, table_dict, datadir):
     wait_for_job(token, job_url)
 
 
-
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
