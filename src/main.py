@@ -20,7 +20,7 @@ def read_time_value_from_file(source_file, datadir):
         # throw away the header
         f.readline()
         time_value = f.readline().split(',')[0]
-    return time_value.replace('"', '')
+    return time_value.replace('"', '').strip('\n')
 
 
 def wait_for_job(token, job_url):
